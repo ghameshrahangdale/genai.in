@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GenieAI - Prompt image generation website</title>
+    <!-----------Stylesheet---------->
+    <link rel="stylesheet" href="dash.css">
+    <script src="generate.js"></script>
+
+    <script src="https://kit.fontawesome.com/f1d5e702e9.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="promptbox">
+            <h1><i class="fa-brands fa-squarespace"></i>GenieAI</h1> 
+            <h2>AI Image generation website by writing prompts</h2>
+            <h5>Enter the text in the below input bar and<br />get the AI generated image related to this text</h5>
+
+            <div class="prompt-form">
+                <input type="text" id="prompt" placeholder="use prompt here ex. rose">
+                <button onclick="generateImages()"><i class="fa-solid fa-wand-magic-sparkles"></i>Generate Images</button>
+            </div>
+
+            <div class="generated-images-box">
+                <p id="imageContainerText"></p>
+                <div class="images" id="imageContainer"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h1>Designed with love by Ghamesh Rahangdale(SDE-1)</h1>
+    </div>
+</body>
+</html>
